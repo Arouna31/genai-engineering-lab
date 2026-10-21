@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ollama Chatbot</title>
+  </head>
+  <body>
+    <main class="chatbot">
+      <h2>🤖 Ollama Chatbot</h2>
+
+      <section id="messages" class="messages"></section>
+
+      <form id="chat-form">
+        <input
+          id="prompt"
+          type="text"
+          placeholder="Pose ta question..."
+          autocomplete="off"
+          required
+        />
+        <button id="send" type="submit">Envoyer</button>
+      </form>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

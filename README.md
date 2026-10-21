@@ -15,27 +15,27 @@ This repository documents my learning journey toward **AI & Software Engineering
 
 ## 🛠 Tech Stack
 
-| Category | Technologies |
-|---|---|
-| LLM Runtime | Ollama |
-| Models | Llama 3.2, Qwen |
-| Languages | Python, TypeScript |
-| Frameworks | LangChain |
-| Vector Databases | ChromaDB (planned) |
-| APIs | REST, OpenAI-compatible API |
+| Category         | Technologies                |
+| ---------------- | --------------------------- |
+| LLM Runtime      | Ollama                      |
+| Models           | Llama 3.2, Qwen             |
+| Languages        | Python, TypeScript          |
+| Frameworks       | LangChain                   |
+| Vector Databases | ChromaDB (planned)          |
+| APIs             | REST, OpenAI-compatible API |
 
-*The stack will evolve as new concepts are explored.*
+_The stack will evolve as new concepts are explored._
 
 ## 🧪 Labs & Learning Roadmap
 
-| ID | Topic | Status |
-|---|---|---|
-| GENAI-001 | Local LLM inference with Ollama | 🚧 In Progress |
-| GENAI-002 | Prompt Engineering | 📋 Planned |
-| GENAI-003 | LangChain Fundamentals | 📋 Planned |
-| GENAI-004 | Embeddings & Vector Databases | 📋 Planned |
-| GENAI-005 | RAG Pipeline Implementation | 📋 Planned |
-| GENAI-006 | AI Agents & Tool Calling | 📋 Planned |
+| ID        | Topic                           | Status     |
+| --------- | ------------------------------- | ---------- |
+| GENAI-001 | Local LLM inference with Ollama | OK         |
+| GENAI-002 | Prompt Engineering              | 📋 Planned |
+| GENAI-003 | LangChain Fundamentals          | 📋 Planned |
+| GENAI-004 | Embeddings & Vector Databases   | 📋 Planned |
+| GENAI-005 | RAG Pipeline Implementation     | 📋 Planned |
+| GENAI-006 | AI Agents & Tool Calling        | 📋 Planned |
 
 ## 🚀 Getting Started
 
