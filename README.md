@@ -17,8 +17,8 @@ This repository documents my learning journey toward **AI & Software Engineering
 
 | Category         | Technologies                |
 | ---------------- | --------------------------- |
-| LLM Runtime      | Ollama                      |
-| Models           | Llama 3.2, Qwen             |
+| LLM Runtime      | OpenApi                     |
+| Models           | GPT OSS                     |
 | Languages        | Python, TypeScript          |
 | Frameworks       | LangChain                   |
 | Vector Databases | ChromaDB (planned)          |
@@ -31,8 +31,8 @@ _The stack will evolve as new concepts are explored._
 | ID        | Topic                           | Status     |
 | --------- | ------------------------------- | ---------- |
 | GENAI-001 | Local LLM inference with Ollama | OK         |
-| GENAI-002 | LangChain Fundamentals          | 📋 Planned |
-| GENAI-003 | Embeddings & Vector Databases   | 📋 Planned |
+| GENAI-002 | LangChain Fundamentals          | OK         |
+| GENAI-003 | Embeddings & Vector Databases   | OK         |
 | GENAI-004 | RAG Pipeline Implementation     | 📋 Planned |
 | GENAI-005 | AI Agents & Tool Calling        | 📋 Planned |
 
