@@ -5,6 +5,7 @@ import {
   StringOutputParser,
   CommaSeparatedListOutputParser,
 } from "@langchain/core/output_parsers";
+import { OutputFixingParser } from "langchain/output_parsers";
 import { StructuredOutputParser } from "langchain/output_parsers";
 import { z } from "zod";
 
@@ -56,6 +57,7 @@ async function useStructuredOutputParser() {
         Give me the state of the light following input.
         Formating instructions: {format}
         input: {input}
+        Never use backticks in your response \`\`\`.
     `);
 
   /*
@@ -75,16 +77,24 @@ async function useStructuredOutputParser() {
       brightness: z.string().describe("The brightness of the light."),
     }),
   );
+  // Try fixing parsing problems
+  const outputFixer = OutputFixingParser.fromLLM(llm, outputParser);
 
-  const chain = prompt.pipe(llm).pipe(outputParser);
+  const chain = prompt.pipe(llm).pipe(outputFixer);
 
-  return await chain.invoke({
-    input:
-      "The light LightOne is turned on, the color is red and brightness is 50%.",
-    format: outputParser.getFormatInstructions(),
-  });
+  try {
+    const response = await chain.invoke({
+      input:
+        "The light LightOne is turned on, the color is red and brightness is 50%.",
+      format: outputParser.getFormatInstructions(),
+    });
+    return response;
+  } catch (error) {
+    console.error("Error during chain invocation:", error);
+    throw error;
+  }
 }
 
 // console.log(await useStringOutputParser());
-console.log(await useListOutputParser());
-// console.log(await useStructuredOutputParser());
+// console.log(await useListOutputParser());
+console.log(await useStructuredOutputParser());
