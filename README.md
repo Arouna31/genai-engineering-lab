@@ -31,11 +31,10 @@ _The stack will evolve as new concepts are explored._
 | ID        | Topic                           | Status     |
 | --------- | ------------------------------- | ---------- |
 | GENAI-001 | Local LLM inference with Ollama | OK         |
-| GENAI-002 | Prompt Engineering              | 📋 Planned |
-| GENAI-003 | LangChain Fundamentals          | 📋 Planned |
-| GENAI-004 | Embeddings & Vector Databases   | 📋 Planned |
-| GENAI-005 | RAG Pipeline Implementation     | 📋 Planned |
-| GENAI-006 | AI Agents & Tool Calling        | 📋 Planned |
+| GENAI-002 | LangChain Fundamentals          | 📋 Planned |
+| GENAI-003 | Embeddings & Vector Databases   | 📋 Planned |
+| GENAI-004 | RAG Pipeline Implementation     | 📋 Planned |
+| GENAI-005 | AI Agents & Tool Calling        | 📋 Planned |
 
 ## 🚀 Getting Started
 
